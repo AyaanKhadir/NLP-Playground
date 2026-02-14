@@ -1,161 +1,116 @@
-```markdown
-# NLP Nexus Pro – Advanced NLP Text Analysis Playground
+---
 
-A powerful, visually rich, and interactive **NLP demo application** built with **Gradio** and **NLTK**, designed to showcase advanced natural language processing techniques in a clean, modern interface.
+# 🚀 NLP Nexus Pro: Advanced Text Analysis Playground
 
-This project demonstrates a wide range of NLP capabilities — from tokenization and lemmatization to **Named Entity Recognition (NER)** with visual highlighting, **sentiment analysis** with gauges, **readability visualization** using radar charts, **word clouds**, keyword extraction, and extractive summarization — all in one unified, portfolio-ready application.
+**NLP Nexus Pro** is a comprehensive, visually-driven natural language processing suite. Built with **Gradio** and **NLTK**, it transforms raw text into actionable insights through a modern, interactive web interface.
 
-Perfect for:
-- Portfolio showcase
-- Teaching NLP concepts
-- Experimenting with text analysis
-- Demonstrating Gradio + Plotly + NLTK integration
-
-## ✨ Features
-
-- **Interactive web interface** powered by Gradio
-- **Input options**: Paste text or upload `.txt` / `.pdf` files
-- **Named Entity Recognition (NER)** with colorful HTML highlighting
-- **Sentiment Analysis** visualized as a beautiful gauge (Polarity)
-- **POS Tag Distribution** – top tags bar chart (Plotly)
-- **Readability Fingerprint** – radar chart showing multiple readability metrics
-- **Word Cloud** generation (cleaned, stopwords removed)
-- **Keyword Extraction** using YAKE
-- **Extractive Summarization** (control number of sentences)
-- **Full token & POS log** in a dataframe
-- **Exportable JSON** metadata (sentiment assessments)
-- Clean stats overview (sentences, words, complex words)
-- Modern UI with tabs, responsive layout, and soft theme
-
-## 🖼️ Screenshots
-
-
-
-1. **Main Interface** – input + stats overview  
-2. **NER Highlighting** – colorful entity visualization  
-3. **Sentiment Gauge** – emotional polarity indicator  
-4. **Readability Radar + POS Bar Chart**  
-5. **Word Cloud + Keywords & Summary**
-
-## 🚀 Live Demo
-
-*(If you deploy it – add the link here)*  
-Example: https://huggingface.co/spaces/your-username/nlp-nexus-pro
-
-## 📋 Requirements
-
-```text
-gradio
-nltk
-textblob
-textstat
-yake
-PyPDF2
-pandas
-plotly
-wordcloud
-numpy
-```
-
-Install all dependencies with:
-
-```bash
-pip install -r requirements.txt
-```
-
-## 🛠️ Installation & Usage
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/AyaanKhadir/nlp-nexus-pro.git
-cd nlp-nexus-pro
-```
-
-### 2. Install dependencies
-
-```bash
-# Recommended: use a virtual environment
-python -m venv venv
-source venv/bin/activate    # Linux / macOS
-venv\Scripts\activate       # Windows
-
-pip install -r requirements.txt
-```
-
-### 3. Run the application
-
-```bash
-python app.py
-```
-
-The app will open in your browser at:  
-**http://127.0.0.1:7860**
-
-### 4. Try it out
-
-- Paste any text (news article, paragraph, PDF content, etc.)
-- Or upload a `.txt` or `.pdf` file
-- Adjust **Summary Depth** slider
-- Click **Run Full Diagnostic**
-
-## 🧠 Technologies Used
-
-| Category              | Tools / Libraries                              |
-|-----------------------|------------------------------------------------|
-| Web Interface         | Gradio                                         |
-| NLP Processing        | NLTK, TextBlob, YAKE, textstat                 |
-| Visualization         | Plotly (gauge, bar, radar), WordCloud          |
-| File Handling         | PyPDF2                                         |
-| Data Handling         | pandas, numpy                                  |
-| UI Styling            | HTML + CSS (inline), Gradio Soft theme         |
-
-## 🔍 Key NLP Components Implemented
-
-- **Tokenization** — word & sentence level
-- **POS Tagging** — using NLTK’s averaged perceptron tagger
-- **Named Entity Recognition** — person, organization, location, date, etc.
-- **Lemmatization** — (can be extended easily)
-- **Sentiment Analysis** — polarity & subjectivity via TextBlob
-- **Readability Scores** — Flesch Reading Ease, Flesch-Kincaid, difficult words count
-- **Keyword Extraction** — YAKE (Yet Another Keyword Extractor)
-- **Extractive Summarization** — frequency-based sentence selection
-- **Word Cloud** — cleaned and visually appealing
-
-## 📈 How to Extend / Improve
-
-Some ideas for future versions:
-
-- Add **dependency parsing** visualization (using spaCy + displaCy)
-- Add **topic modeling** (LDA / BERTopic preview)
-- Support **multiple languages** (basic multilingual tokenizers)
-- Add **text comparison** (similarity, diff between two documents)
-- Add **export to PDF** or **CSV**
-- Integrate **Hugging Face** models for more powerful summarization / NER
-- Add **dark mode** toggle / custom themes
-- Deploy on **Hugging Face Spaces** or **Streamlit Community Cloud**
-
-## 🙌 Acknowledgments
-
-- Gradio team – for the fantastic UI framework
-- NLTK team – for the classic and reliable NLP tools
-- Plotly – for beautiful interactive visualizations
-- YAKE authors – for excellent keyword extraction
-
-## 📄 License
-
-MIT License
-
-Feel free to use, modify, and share this project — attribution appreciated!
-
-## 👨‍💻 Author
-
-**Ayaan Khadir**  
-B.Tech + M.Tech in Artificial Intelligence & Data Science  
-Hyderabad, India  
-GitHub: [AyaanKhadir](https://github.com/AyaanKhadir)
+This project is designed as a portfolio-ready demonstration of full-stack NLP integration—combining statistical analysis, machine learning heuristics, and dynamic data visualization.
 
 ---
 
-Built with ❤️ for learning, teaching, and showcasing NLP in 2026
+## ✨ Key Features
+
+### 🔍 Core Analytics
+
+* **Named Entity Recognition (NER):** Visual highlighting of People, Organizations, Locations, and Dates using custom HTML rendering.
+* **Sentiment & Subjectivity:** Real-time emotional polarity tracking visualized via **Plotly gauge charts**.
+* **Extractive Summarization:** Frequency-based algorithm with user-controlled depth sliders.
+* **Keyword Extraction:** High-precision keyphrase identification using the **YAKE** algorithm.
+
+### 📊 Advanced Visualizations
+
+* **Readability Fingerprint:** A multi-metric radar chart (Flesch-Kincaid, Gunning Fog, etc.) to assess text complexity.
+* **POS Distribution:** Interactive bar charts showing Part-of-Speech tag density.
+* **Word Clouds:** Beautifully rendered frequency maps with automated stop-word filtration.
+
+### 📂 Technical Utility
+
+* **Multi-Format Support:** Process raw text, `.txt`, or `.pdf` files via **PyPDF2**.
+* **Data Export:** Comprehensive token logs in DataFrames and exportable JSON metadata.
+* **Modern UI:** Responsive layout featuring the Gradio 'Soft' theme and custom CSS.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools & Libraries |
+| --- | --- |
+| **Interface** | Gradio, HTML5/CSS3 |
+| **NLP Engine** | NLTK, TextBlob, YAKE, Textstat |
+| **Visualization** | Plotly, WordCloud, Matplotlib |
+| **Data Science** | Pandas, NumPy |
+| **Document Parsing** | PyPDF2 |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Python 3.9 or higher
+* pip (Python package manager)
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/AyaanKhadir/nlp-nexus-pro.git
+cd nlp-nexus-pro
+
 ```
+
+
+2. **Set up a virtual environment (Recommended)**
+```bash
+python -m venv venv
+# macOS/Linux
+source venv/bin/activate
+# Windows
+venv\Scripts\activate
+
+```
+
+
+3. **Install dependencies**
+```bash
+pip install -r requirements.txt
+
+```
+
+
+
+### Execution
+
+Run the local development server:
+
+```bash
+python app.py
+
+```
+
+The application will be available at: `http://127.0.0.1:7860`
+
+---
+
+## 📈 Roadmap & Future Enhancements
+
+* [ ] **Transformer Integration:** Swap NLTK for Hugging Face `transformers` (BERT/RoBERTa) for deep-learning-based NER and Sentiment.
+* [ ] **Dependency Parsing:** Interactive tree visualizations using `spaCy` and `displaCy`.
+* [ ] **Topic Modeling:** Integration of LDA or BERTopic for thematic discovery in large documents.
+* [ ] **Multilingual Support:** Expanding tokenization and POS tagging for 10+ languages.
+
+---
+
+## 👨‍💻 Author
+
+**Ayaan Khadir**
+*B.Tech + M.Tech in Artificial Intelligence & Data Science*
+📍 Hyderabad, India
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
+
+*Built with ❤️ for the NLP community in 2026.*
